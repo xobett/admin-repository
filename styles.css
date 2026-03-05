@@ -1,26 +1,70 @@
 @import './reset.css';
 
+:root{
+    --light-blue: rgb(0, 174, 255);
+    --light-grey: rgb(218, 218, 218);
+    --white: rgb(255, 255, 255);
+}
+
 .grid-container{
     height: 100vh;
 
     display: grid;
-    grid-template: 1fr 4fr / 1fr 4fr;
+    grid-template: 1fr 4fr / 1fr 5fr;
 }
 
 .header{
-    background-color: antiquewhite;
+    background-color: var(--white);
 
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+
+    height: 100%;
+
+    display: grid;
+    grid-template: 1.5fr 2fr / auto;
+}
+
+.header .second-row,
+.btns-container{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second-row > *{
+    border: 1px solid red;
 }
 
 .sidebar{
-    background-color: aqua;
+    background-color: var(--light-blue);
 
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 }
 
 .content{
-    background-color: purple;
+    background-color: var(--light-grey);
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 6em;
+    height: 2.6rem;
+    background-color: var(--light-blue);
+    border-radius: 20px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btns-container{
+    margin-right: 40px;
+    width: 26%;
 }
