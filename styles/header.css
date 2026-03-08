@@ -1,0 +1,67 @@
+.header{
+    background-color: var(--white);
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    display: grid;
+    grid-template: 1.5fr 2fr / auto;
+}
+
+.first-row{
+    border: 1px solid red;
+    display: flex;
+}
+
+.searchbar-container,
+.notifications-container{
+    /* border: 1px solid rebeccapurple; */
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.searchbar-container{
+    flex: 2 0 0;
+
+    padding: 0 45px;
+    justify-content: start;
+    gap: 15px;
+}
+
+.searchbar{
+    background-color: var(--light-grey);
+
+    width: 90%;
+    height: 40%;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.notifications-container{
+    flex: 1 0 0;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.profile-avatar{
+    width: 3.2rem;
+}
+
+.profile-avatar img{
+    border-radius: 100px;
+}
+
+.username{
+    font-weight: bold;
+
+    font-size: 1.2em;
+}
