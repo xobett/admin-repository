@@ -11,6 +11,13 @@ body{
 svg{
     width: var(--icon-size);
     height: var(--icon-size);
+    min-width: var(--icon-size);
+}
+
+svg:hover,
+img:hover,
+.btn:hover{
+    cursor: pointer;
 }
 
 .grid-container{
