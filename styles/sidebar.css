@@ -1,0 +1,8 @@
+.sidebar{
+    display: grid;
+    grid-template: repeat(3, min-content) / auto;
+}
+
+.nav-tab{
+    display: flex;
+}
