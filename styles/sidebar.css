@@ -1,8 +1,36 @@
 .sidebar{
     display: grid;
     grid-template: repeat(3, min-content) / auto;
+    gap: 30px;
 }
 
-.nav-tab{
-    display: flex;
+.logo-container{
+    margin-top: 10px;
+}
+
+.logo-container .tab{
+    font-size: 1.8rem;
+}
+
+.logo-container svg{
+    --icon-size: 3rem;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.tab{
+    padding: 10px 23px;
+
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 20px;
+
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+}
+
+.tab svg{
+    fill: white;
+    justify-self: center;
 }

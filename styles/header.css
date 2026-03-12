@@ -54,8 +54,6 @@
 .profile-avatar{
     width: 3.2rem;
     flex-shrink: 0;
-
-    user-select: none;
 }
 
 .profile-avatar img{
@@ -114,6 +112,4 @@
     width: 7rem;
     height: 2.7rem;
     border-radius: 50px;
-
-    user-select: none;
 }

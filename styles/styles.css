@@ -8,6 +8,13 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.btn,
+.tab,
+.profile-avatar,
+.username{
+    user-select: none;
+}
+
 svg{
     width: var(--icon-size);
     height: var(--icon-size);
@@ -16,6 +23,7 @@ svg{
 
 svg:hover,
 img:hover,
+.tab:hover,
 .btn:hover{
     cursor: pointer;
 }
