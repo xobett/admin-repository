@@ -105,3 +105,24 @@
 .trending{
     margin-top: 40px;
 }
+
+.trending-container{
+    display: grid;
+    grid-template-rows: repeat(4, minmax(0px, 1fr));
+    gap: 5px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info .username{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.info .description{
+    font-size: 0.9rem;
+}
